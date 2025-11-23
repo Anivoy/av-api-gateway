@@ -4,8 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon src/server.js",
-    "start": "NODE_ENV=production node src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "author": "Fadil Hisyam",
   "license": "ISC",

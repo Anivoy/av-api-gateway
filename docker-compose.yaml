@@ -1,0 +1,19 @@
+version: "3.9"
+
+networks:
+  anivoy-shared-net:
+    external: true
+
+services:
+  gateway:
+    build:
+      context: .
+      target: development
+    container_name: anivoy-api-gateway
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - anivoy-shared-net
