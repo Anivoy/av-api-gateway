@@ -27,7 +27,7 @@ export const services = [
       { prefix: "/show", target: "/api/v1/show" },
       { prefix: "/difficulty", target: "/api/v1/difficulty" },
       { prefix: "/region", target: "/api/v1/region" },
-      { prefix: "/prefecture", target: "/api/v1/prefecture" },      { prefix: "/prefecture", target: "/api/v1/prefecture" },
+      { prefix: "/prefecture", target: "/api/v1/prefecture" },
       { prefix: "/city", target: "/api/v1/city" },
     ]
   }
