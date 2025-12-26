@@ -13,7 +13,8 @@ export const services = [
     name: "game",
     baseUrl: env.SERVICES.GAME,
     routes: [
-      { prefix: "/game", target: "/api/v1/game" }
+      { prefix: "/game", target: "/api/v1/game" },
+      { prefix: "/game-mode", target: "/api/v1/game-mode" }
     ]
   },
 

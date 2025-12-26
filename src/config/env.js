@@ -3,7 +3,7 @@ dotenv.config()
 
 export const env = {
   PORT: parseInt(process.env.PORT) || 8080,
-  CLIENT_URL: process.env.CLIENT_URL || "http://localhost:5173",
+  CLIENT_URLS: process.env.CLIENT_URLS || "http://localhost:5173,http://localhost:3000",
 
   JWT_PUBLIC_KEY: process.env.JWT_PUBLIC_KEY,
   JWT_ALGO: process.env.JWT_ALGO || "RS256",
