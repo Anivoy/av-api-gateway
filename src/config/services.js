@@ -1,12 +1,10 @@
-import { env } from "./env.js";
+import { env } from "./env.js"
 
 export const services = [
   {
     name: "auth",
     baseUrl: env.SERVICES.AUTH,
-    routes: [
-      { prefix: "/auth", target: "/api/v1/auth" }
-    ]
+    routes: [{ prefix: "/auth", target: "/api/v1/auth" }],
   },
 
   {
@@ -14,8 +12,9 @@ export const services = [
     baseUrl: env.SERVICES.GAME,
     routes: [
       { prefix: "/game", target: "/api/v1/game" },
-      { prefix: "/game-mode", target: "/api/v1/game-mode" }
-    ]
+      { prefix: "/game-mode", target: "/api/v1/game-mode" },
+      { prefix: "/result", target: "/api/v1/result" },
+    ],
   },
 
   {
@@ -30,6 +29,6 @@ export const services = [
       { prefix: "/region", target: "/api/v1/region" },
       { prefix: "/prefecture", target: "/api/v1/prefecture" },
       { prefix: "/city", target: "/api/v1/city" },
-    ]
-  }
-];
+    ],
+  },
+]
